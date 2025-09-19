@@ -1,0 +1,15 @@
+{
+  "souls": {
+    "djklmr": {
+      "soul_id": "aqr_soul_b440a07f6e98",
+      "balance": 1000.0,
+      "reputation": 0.0
+    },
+    "nova": {
+      "soul_id": "aqr_soul_30c08ab483c1",
+      "balance": 0.0,
+      "reputation": 0.0
+    }
+  },
+  "transactions": {}
+}

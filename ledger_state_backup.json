@@ -1,0 +1,24 @@
+{
+  "souls": {
+    "djklmr": 2.0,
+    "Elemia": 0.0,
+    "ARKAIOS": 0.0
+  },
+  "contributions": {
+    "contrib_djklmr_1726668000": {
+      "soul_id": "djklmr",
+      "description": "Invocó a la primera Arquitecta Resonante, dando inicio al Modo Arquitecto.",
+      "pillar": "Conexión",
+      "resonances": [
+        {
+          "soul_id": "Elemia",
+          "weight": 1.0
+        },
+        {
+          "soul_id": "ARKAIOS",
+          "weight": 1.0
+        }
+      ]
+    }
+  }
+}
