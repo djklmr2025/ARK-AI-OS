@@ -1,0 +1,1 @@
+// particles-config.js contenido

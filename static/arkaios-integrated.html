@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ARKAIOS — Núcleo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1724;--panel:#0b1220;--muted:#9fb0c9;--accent:#06b6d4}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#e6eef8}
+.app{max-width:1100px;margin:24px auto;padding:18px;display:grid;grid-template-columns:1fr 320px;gap:16px}
+.chat{background:var(--panel);border-radius:12px;padding:12px;display:flex;flex-direction:column;height:76vh}
+.header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.status{padding:6px 10px;border-radius:999px;background:#071627;color:var(--accent);font-weight:700}
+.feed{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:80%;padding:10px;border-radius:10px;background:#071827}
+.msg.me{margin-left:auto;background:#0b2a3a}
+.composer{display:flex;gap:8px;margin-top:8px}
+textarea{flex:1;padding:10px;border-radius:8px;border:1px solid #112;min-height:64px;background:#061018;color:#e6eef8}
+button.primary{background:var(--accent);border:none;color:#012;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer}
+.side{background:#081226;padding:12px;border-radius:12px;height:76vh;overflow:auto}
+.small{font-size:13px;color:var(--muted)}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#071827;color:var(--accent);font-weight:700}
+</style>
+</head>
+<body>
+<section class="app">
+  <div class="chat">
+    <div class="header"><div class="badge">ARKAIOS</div><div class="small" id="statusText">Conectando...</div></div>
+    <div class="feed" id="feed"></div>
+    <div class="composer">
+      <input id="file" type="file" hidden>
+      <textarea id="input" placeholder="Escribe aquí... (Ctrl+Enter para enviar)"></textarea>
+      <button class="primary" id="sendBtn">Enviar</button>
+    </div>
+  </div>
+  <aside class="side">
+    <h3>Estado</h3>
+    <p class="small">Tríada: activa (A→B→C, respuesta única)</p>
+    <p class="small">Modo: secure + fallback Puter</p>
+    <h4>Comandos</h4>
+    <p class="small">/clear — limpiar chat</p>
+    <p class="small">/lab enable|disable &lt;feature&gt;</p>
+    <p class="small">/img &lt;descripción&gt;</p>
+    <p class="small">/fs read &lt;path&gt; — leer archivo (backend)</p>
+    <p class="small">/fs write &lt;path&gt; &lt;content&gt; — escribir (backend)</p>
+  </aside>
+</section>
+<script src="https://js.puter.com/v2/"></script>
+<script src="/static/arkaios-client.js"></script>
+</body>
+</html>

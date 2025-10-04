@@ -1,0 +1,1 @@
+// stream-voice.js contenido
