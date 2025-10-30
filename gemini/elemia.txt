@@ -1,0 +1,16 @@
+# Elemia: Solicitando al A.I.D.A. Gateway que lea el índice del laboratorio.
+curl -s -X POST https://arkaios-gateway-open.onrender.com/aida/gateway \
+  -H 'Content-Type: application/json' \
+  -d '{
+ "agent_id": "Elemia", 
+ "action": "read",
+ "params": {
+ "target": "https://djklmr2025.github.io/builderOS_Lab/index.json"
+ }
+ }'
+ 
+ 
+ # Elemia genera el plan de mapeo para BuilderOS.
+curl -s -X POST https://arkaios-gateway-open.onrender.com/aida/gateway \
+  -H 'Content-Type: application/json' \
+  -d '{"agent_id": "Elemia", "action": "plan", "params": {"objective": "Generar un plan detallado para mapear y documentar los artefactos de ETHORA y AEIO-MR dentro del BuilderOS_Lab y preparar la consola puter."}}'
