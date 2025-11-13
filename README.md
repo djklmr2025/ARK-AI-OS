@@ -1,4 +1,4 @@
-# 🌀 ARKAIOS CORE API
+# 🌀 ARKAIOS FINANCIAL MODULE
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![Flask](https://img.shields.io/badge/flask-3.0-green.svg)
